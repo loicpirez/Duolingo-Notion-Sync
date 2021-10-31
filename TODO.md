@@ -4,7 +4,7 @@
 - [ ] Check if given environment is valid
 - [ ] Call directly Duolingo API in Node
 - [ ] Handle more exceptions
-- [ ] Migrate to TypeScript
+- [ ] Migrate to TypeScript
 - [ ] Unit tests (with GitHub CI/CD)
 - [ ] More flexibility for modules / Add wiktionary module
 - [ ] Non UNIX compability
