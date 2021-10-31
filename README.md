@@ -47,3 +47,9 @@ You can add them in the `.env` files. (see `.env.sample`)
 | NOTION_DATABASE_TITLE  | Title of your Notion database. |
 | NOTION_DATABASE_ID  | ID of your Notion database.  |
 | NOTION_PAGE_ID  | ID of your Notion page.  |
+
+## Running
+
+```bash
+npm run start
+```
