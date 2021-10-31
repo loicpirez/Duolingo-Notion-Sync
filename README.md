@@ -12,7 +12,7 @@ This script does:
 
 ![Main page](https://raw.github.com/loicpirez/duolingo-notion-vocabulary-sync/main/screenshots/main.png)
 
-![Grouped by category page](https://raw.github.com/loicpirez/duolingo-notion-vocabulary-sync/main/screenshots/category.png)
+![Grouped by category page](https://raw.github.com/loicpirez/duolingo-notion-vocabulary-sync/main/screenshots/categories.png)
 
 
 Please find the Notion template [here](https://loicpirez.notion.site/1f97905c491d4862a88bc8ecf1381c95?v=c0c3183875fd48f883044fdd55f845f1)
