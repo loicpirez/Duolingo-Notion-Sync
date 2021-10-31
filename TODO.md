@@ -5,7 +5,7 @@
 - [ ] Call directly Duolingo API in Node
 - [ ] Handle more exceptions
 - [ ] Migrate to TypeScript
-- [ ] Unit tests
+- [ ] Unit tests (with GitHub CI/CD)
 - [ ] More flexibility for modules / Add wiktionary module
 - [ ] Non UNIX compability
 - [ ] Older Node.JS compability (Babel build?)
