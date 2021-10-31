@@ -58,7 +58,7 @@ class Duolingo {
         category: word.skill,
         lastPracticed: utils.formatDate(new Date(word.last_practiced_ms)),
         mastered: parsedKnowedWords.includes(word.word_string) ||
-          word.strength === 1,
+          word.strength >= 0.9,
         strength: word.strength,
       };
     });
