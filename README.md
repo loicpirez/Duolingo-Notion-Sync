@@ -23,6 +23,10 @@ Clone the repo and install the dependencies.
 NodeJS and Python3 (with pip) must be installed.
 
 ```bash
+git clone git@github.com:loicpirez/Duolingo-Notion-Sync.git
+```
+
+```bash
 pip3 install duolingo-api dotenv 
 ```
 
