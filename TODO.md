@@ -9,3 +9,4 @@
 - [ ] More flexibility for modules / Add wiktionary module
 - [ ] Non UNIX compability
 - [ ] Older Node.JS compability (Babel build?)
+- [ ] Audio sample support
