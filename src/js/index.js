@@ -46,17 +46,22 @@ const main = async () => {
 
         logger.info(`[${hanzi}] Searching Notion entry in database`);
 
-        const notionQuery = await notion.searchPageEntry(wordDetails['Hanzi']);
+        const hanziNotionPageEntry = await notion.getPageEntry(
+            'Hanzi', wordDetails['Hanzi'],
+        );
 
-        if (Object.keys(notionQuery).length === 0) {
+        if (hanziNotionPageEntry.results.length === 0) {
           logger.info(`[${hanzi}] Entry does not exist in database`);
           logger.info(`[${hanzi}] Creating entry`);
           await notion.addPageEntry(wordDetails);
           logger.info(`[${hanzi}] Entry added!`);
         } else {
           logger.info(`[${hanzi}] Entry does exist in database`);
-          logger.info(`[${hanzi}] Updating entry`);
-          await notion.updatePageEntry(notionQuery.id, wordDetails);
+          logger.info(`[${hanzi}] Updating the first matched entry`);
+          await notion.updatePageEntry(
+              hanziNotionPageEntry.results[0].id,
+              wordDetails,
+          );
           logger.info(`[${hanzi}] Entry updated!`);
         }
       } catch (e) {

@@ -23,9 +23,7 @@ class Notion {
       'Mastered': {
         'multi_select': [
           {
-            // @TODO: Make this fixed variable dynamic.
-            'name': wordDetails.mastered,
-            'color': wordDetails.mastered === 'Yes' ? 'green' : 'red',
+            'name': wordDetails.Mastered,
           },
         ],
       },
@@ -115,27 +113,25 @@ class Notion {
   }
 
   /**
-  * Query notion for specific Hanzi to find.
-  * @param {string} hanzi The hanzi to find.
+  * Query notion for specific entry to find.
+  * @param {property} property The property to find.
+  * @param {string} entry The entry to find.
+  * @return {object} Whether the entry was found.
   */
-  async searchPageEntry(hanzi) {
-    let data = {};
-
+  async getPageEntry(property, entry) {
     const options = {
       database_id: process.env.NOTION_DATABASE_ID,
+      filter: {
+        property,
+        text: {
+          equals: entry,
+        },
+      },
     };
 
     const dbData = await this.client.databases.query(options);
 
-    dbData.results.forEach((result) => {
-      const currentResult = result.properties['Hanzi'];
-
-      if (currentResult.title[0].plain_text === hanzi) {
-        data = result;
-      }
-    });
-
-    return data;
+    return dbData;
   }
 
   /**
