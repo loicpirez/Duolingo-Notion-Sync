@@ -1,0 +1,11 @@
+- [ ] Add support for more language (not just Chinese simplified)
+- [ ] Add updated time in database description
+- [ ] Add multiple categories for one word
+- [ ] Check if given environment is valid
+- [ ] Call directly Duolingo API in Node
+- [ ] Handle more exceptions
+- [ ] Migrate to TypeScript
+- [ ] Unit tests
+- [ ] More flexibility for modules / Add wiktionary module
+- [ ] Non UNIX compability
+- [ ] Older Node.JS compability (Babel build?)

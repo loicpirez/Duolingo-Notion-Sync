@@ -1,0 +1,39 @@
+{
+  "name": "duolingo-notion-vocabulary-sync",
+  "version": "1.0.0",
+  "description": "Utility to sync vocabulary from Duolingo to Notion.",
+  "main": "src/js/index.js",
+  "scripts": {
+    "start": "node src/js/index.js",
+    "lint": "eslint './src/js/**/*.js' --fix",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/loicpirez/duolingo-notion-vocabulary-sync.git"
+  },
+  "keywords": [
+    "chinese"
+  ],
+  "author": "Loïc PIREZ",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/loicpirez/duolingo-notion-vocabulary-sync/issues"
+  },
+  "homepage": "https://github.com/loicpirez/duolingo-notion-vocabulary-sync#readme",
+  "dependencies": {
+    "@notionhq/client": "^0.4.4",
+    "axios": "^0.23.0",
+    "dotenv": "^10.0.0",
+    "fast-xml-parser": "^3.20.3",
+    "he": "^1.2.0",
+    "json2csv": "^5.0.6",
+    "pinyin-convert": "^1.11.0",
+    "pinyinize": "^3.3.1",
+    "winston": "^3.3.3"
+  },
+  "devDependencies": {
+    "eslint": "^8.1.0",
+    "eslint-config-google": "^0.14.0"
+  }
+}
